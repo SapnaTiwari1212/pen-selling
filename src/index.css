@@ -1,0 +1,65 @@
+:root {
+  --text: #3b3a45;
+  --text-h: #17161f;
+  --muted: #7a7688;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --border: #e5e4ea;
+  --accent: #2f6f4f;
+  --accent-hover: #285e43;
+  --accent-soft: rgba(47, 111, 79, 0.1);
+
+  --amber: #b45309;
+  --soft-amber: rgba(180, 83, 9, 0.12);
+  --blue: #1d4ed8;
+  --soft-blue: rgba(29, 78, 216, 0.12);
+  --green: #047857;
+  --soft-green: rgba(4, 120, 87, 0.12);
+
+  --red: #b91c1c;
+  --soft-red: rgba(185, 28, 28, 0.1);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  color-scheme: light;
+  font: 16px/1.6 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0 0 1rem;
+}
+
+h1 {
+  color: var(--text-h);
+  font-size: 2rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent-hover);
+  }
+}
